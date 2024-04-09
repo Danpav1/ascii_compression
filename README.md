@@ -1,23 +1,25 @@
+# ASCII Compression Tool
 
-In this directory, you should write the program `wzip.c` and compile it into
-the binary `wzip` (e.g., `gcc -o wzip wzip.c -Wall -Werror`).
+## Overview
 
-After doing so, you can run the tests from this directory by running the
-`test-wzip.sh` script. If all goes well, you will see:
+This repository hosts an ASCII Compression Tool. The tool significantly reduces the size of text files without compromising their integrity. For larger files, exceeding 4096 bytes, the tool employs a multi-threaded approach, utilizing 3 threads to enhance processing speed and efficiency. This ensures that even substantial text files are compressed swiftly.
 
-```sh
-prompt> ./test-wzip.sh
-test 1: passed
-test 2: passed
-test 3: passed
-test 4: passed
-test 5: passed
-test 6: passed
-prompt>
-```
+## Features
 
-The `test-wzip.sh` script is just a wrapper for the `run-tests.sh` script in
-the `tester` directory of this repository. This program has a few options; see
-the relevant
-[README](https://github.com/remzi-arpacidusseau/ostep-projects/blob/master/tester/README.md)
-for details.
+- **Compression**: Reduces text file size effectively, ensuring minimal loss of data integrity.
+- **Multi-Threading on Large Files**: Utilizes 3 threads for files larger than 4096 bytes.
+
+## Usage
+
+The correct invocation syntax is as follows:
+
+###### ./wzip [text file 1], [text file 2], ...
+
+A minimum of 1 argument is required.
+
+### Installation
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/ascii-compression-tool.git
