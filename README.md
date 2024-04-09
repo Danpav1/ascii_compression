@@ -13,7 +13,7 @@ This repository hosts an ASCII Compression Tool. The tool significantly reduces 
 
 The correct invocation syntax is as follows:
 
-    ###### ./wzip [text file 1], [text file 2], ...
+    ./wzip [text file 1], [text file 2], ...
 
 A minimum of 1 argument is required.
 
